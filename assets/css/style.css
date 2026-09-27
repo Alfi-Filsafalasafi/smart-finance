@@ -1,0 +1,75 @@
+:root {
+  --bs-primary: #7C3AED;
+  --bs-primary-rgb: 124, 58, 237;
+  --bs-primary-text-emphasis: #5B21B6;
+  --bs-primary-bg-subtle: #EDE4FD;
+  --bs-primary-border-subtle: #C4B0F8;
+  --bs-link-color: #7C3AED;
+  --bs-link-hover-color: #6D28D9;
+
+  --accent-orange: #FB923C;
+
+  --bs-body-font-family: 'Inter', sans-serif;
+  --bs-body-font-size: 1rem;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+}
+
+/* ===== Warna orange bantuan (Bootstrap tidak punya utility ini) ===== */
+.text-orange { color: var(--accent-orange) !important; }
+.bg-orange-subtle { background-color: #FFEDD9 !important; }
+
+/* ===== Gradient section ===== */
+.bg-primary-gradient {
+  background: linear-gradient(135deg, #7C3AED 0%, #FB923C 100%);
+}
+
+/* ===== Hero ===== */
+.hero-section {
+  background: linear-gradient(180deg, #F5F3FF 0%, #FFFFFF 100%);
+}
+
+.hero-icon {
+  font-size: 14rem;
+  color: var(--bs-primary);
+  opacity: 0.15;
+}
+
+@media (max-width: 991.98px) {
+  .hero-icon { font-size: 8rem; margin-top: 1.5rem; }
+}
+
+/* ===== Feature card ===== */
+.feature-card {
+  background: #fff;
+  border: 1px solid #EEE9FB;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(124, 58, 237, 0.12) !important;
+}
+
+.icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+/* ===== About icon ===== */
+.about-icon {
+  font-size: 10rem;
+  color: var(--accent-orange);
+  opacity: 0.2;
+}
+
+@media (max-width: 991.98px) {
+  .about-icon { font-size: 6rem; }
+}
